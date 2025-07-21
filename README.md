@@ -5,7 +5,7 @@
 This project demonstrates how to build a **fully automated CI/CD pipeline** using **AWS CodePipeline**, **CodeBuild**, and **S3 Bucket** for hosting a static website. Whenever you push updates to your GitHub repository, the pipeline automatically builds and deploys the content to your S3 bucket.
 
 ## 📁 Project Structure
-'''bash
+```bash
 project-root/
 ├── buildspec.yml
 ├── index.html
@@ -14,7 +14,7 @@ project-root/
 │   └── assets/
 │       └── ...
 └── README.md
-'''
+```
 ## 🔧 Technologies & AWS Services Used
 
 AWS CodePipeline – for automating the CI/CD process.
@@ -30,7 +30,8 @@ GitHub – as the source control and trigger point.
     Allow CodePipeline and CodeBuild access to S3.
 2. Configure CodeBuild
     Include a buildspec.yml file:
-yaml
+
+```yaml
 version: 0.2
 phases:
   build:
@@ -39,7 +40,8 @@ phases:
 artifacts:
   files:
     - '**/*'
-'''
+```
+
 4. Create CodePipeline
    Connect to your GitHub repo.
    Use CodeBuild for the build stage.
