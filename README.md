@@ -1,6 +1,6 @@
 # 🚀 CI/CD Pipeline with AWS CodePipeline and S3 Bucket
 
-![diagram](e-commerce-web-site/images/diagram.png)
+![diagram](images/pipeline.png)
 
 This project demonstrates how to build a **fully automated CI/CD pipeline** using **AWS CodePipeline**, **CodeBuild**, and **S3 Bucket** for hosting a static website. Whenever you push updates to your GitHub repository, the pipeline automatically builds and deploys the content to your S3 bucket.
 
